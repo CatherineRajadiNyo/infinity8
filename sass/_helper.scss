@@ -1,0 +1,85 @@
+// colors
+$color-blue: #112d4e;
+$color-dark_blue: #0D223A;
+$color-gold: #CBB376;
+$color-lighter_gold: #e0c786;
+$color-white: #FFFFFF;
+$color-lighter_grey: #F8F8F8;
+$color-light_grey: #F4F4F4;
+$color-grey: #C4C4C4;
+$color-dark_grey: #909090;
+$color-darker_grey: #676767;
+$color-black: #000000;
+
+$border-radius-button: 25px;
+$logo-width: 252px;
+
+.color{
+    &-blue{
+        color:$color-blue;
+    }
+    &-dark_blue{
+        color:$color-dark_blue;
+    }
+    &-gold{
+        color:$color-gold;
+    }
+    &-lighter_grey{
+        color:$color-lighter_grey;
+    }
+    &-light_grey{
+        color:$color-light_grey;
+    }
+    &-grey{
+        color:$color-grey;
+    }
+    &-dark_grey{
+        color:$color-dark_grey;
+    }
+    &-darker_grey{
+        color:$color-darker_grey;
+    }
+    &-black{
+        color:$color-black;
+    }
+}
+
+
+.bg{
+    &-blue{
+        background-color:$color-blue;
+    }
+    &-dark_blue{
+        background-color:$color-dark_blue;
+    }
+    &-gold{
+        background-color:$color-gold;
+    }
+    &-lighter_grey{
+        background-color:$color-lighter_grey;
+    }
+    &-light_grey{
+        background-color:$color-light_grey;
+    }
+    &-grey{
+        background-color:$color-grey;
+    }
+    &-dark_grey{
+        background-color:$color-dark_grey;
+    }
+    &-darker_grey{
+        background-color:$color-darker_grey;
+    }
+    &-black{
+        background-color:$color-black;
+    }
+}
+
+.fs{
+    &-large{
+        font-size: 1.286rem;
+    }
+    &-small{
+        font-size: 0.857rem;
+    }
+}

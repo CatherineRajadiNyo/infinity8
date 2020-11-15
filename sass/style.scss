@@ -1,0 +1,297 @@
+@import './breakpoints.scss';
+@import './helper.scss';
+@import './button.scss';
+
+body{
+    // font-family: "acumin-pro-semi-condensed", "Arial";
+    font-family:"acumin-pro-condensed", "sans-serif";
+    font-size: 14px;
+    color: $color-black;
+    font-weight: 400;
+}
+
+*{
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+    color: $color-grey;
+
+    &:hover{
+        color: $color-dark_grey;
+        text-decoration: none;
+    }
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-family:"acumin-pro-condensed";
+    font-size: 55px;
+    font-weight: 600;
+}
+h2{
+    font-family:"acumin-pro-condensed";
+    font-size: 43px;
+    font-weight: 600;
+}
+h3{
+    font-family:"acumin-pro-condensed";
+    font-size: 36px;
+    font-weight: 600;
+}
+h4{
+    font-family:"acumin-pro-condensed";
+    font-size: 28px;
+    font-weight: 600;
+}
+h5{
+    font-family:"acumin-pro-condensed";
+    font-size: 26px;
+    font-weight: 600;
+}
+h6{
+    font-family:"acumin-pro-condensed";
+    font-size: 24px;
+    font-weight: 600;
+}
+
+input,
+textarea{
+    height: 31px;
+    line-height: 31px;
+    padding: 0 1rem;
+    border-radius: 5px;
+    border: 0;
+    width: 100%;
+}
+
+textarea{
+    min-height: 87px;
+}
+
+.footer{
+    padding: 38px 0;
+    color: $color-grey;
+    font-size: 0.857rem;
+
+    a{
+        color: $color-grey;
+        text-transform: uppercase;
+        padding-right: 1rem;
+        font-size: inherit;
+        font-size: 0.857rem;
+    }
+}
+
+// navbar
+.navbar{
+    text-transform: uppercase;
+    height: 45px;
+    padding: 38px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &-brand{
+        width: $logo-width;
+        padding: 0;
+    }
+
+    &-nav{
+        flex-grow: 1;
+        justify-content: flex-end;
+        align-items: center;
+        
+        .nav-link{
+            color: $color-white !important;
+            font-weight: 600;
+            padding-left: 16px !important;
+            padding-right: 16px !important;
+
+            &.btn{
+                color: $color-gold !important;
+                padding-left: 25px !important;
+                padding-right: 25px !important;
+                font-size: inherit;
+                height: 45px;
+                line-height: 45px;
+
+                &:hover{
+                    color: $color-white !important;
+                }
+            }
+        }
+
+        .nav-item{
+            &:last-child{
+                margin-left: 16px;
+            }
+        }
+    }
+}
+
+// banner
+.banner{
+    color: $color-white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &-home{
+        height: 768px;
+        background-image: url('../images/banner/bg-home.jpg');
+        background-position: center right;
+    }
+    
+    &-contact_us{
+        min-height: 548px;
+        background-image: url('../images/banner/bg-footer.jpg');
+        background-position: center left;
+        padding: 110px 0;
+    }
+    
+    &-home_success{
+        min-height: 823px;
+        background-image: url('../images/banner/bg-home_success.jpg');
+        background-position: center left;
+        padding: 110px 0;
+    }
+
+    &-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2{
+            text-transform: uppercase;
+        }
+    }
+}
+
+// contact-us
+.contact-us{
+    &-content{
+        color: $color-grey;
+    }
+
+    &-form{
+        .header{
+            height: 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            h4{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .logo{
+        width: $logo-width;
+    }
+
+    .social-media{
+        i{
+            font-size: 25px;
+        }
+        color: $color-white;
+        margin-right: 1rem;
+    }
+}
+
+.home_success{
+    .subtitle{
+        width: 40%;
+        margin: 0 auto;
+        
+        @include media-breakpoint-down(md){
+            width: 100%;
+        }
+    }
+    .tab-content{
+        padding: 40px 0;
+        border-bottom: 1px solid $color-grey;
+        transition: all .25s;
+    }
+
+    .tab-content > .tab-pane{
+        text-align: center;
+    }
+
+    .nav-tabs{
+        border-bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+
+        .nav-link{
+            background-color: transparent;
+            border: 0;
+            color: $color-dark_blue;
+            text-align: center;
+            padding-top: 25px;
+
+            @include media-breakpoint-down(sm){
+                margin: 0 1.5rem;
+            }
+
+            .icon{
+                width: 76px;
+                height: 76px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-repeat: no-repeat;
+                background-position: center left;
+                transition: all .25s;
+
+                &-partners{
+                    background-image: url(../images/home_success/icon-partners.png);
+                }
+                &-clients{
+                    background-image: url(../images/home_success/icon-clients.png);
+                }
+                &-assets{
+                    background-image: url(../images/home_success/icon-assets.png);
+                }
+                &-claims{
+                    background-image: url(../images/home_success/icon-claims.png);
+                }
+                &-consultants{
+                    background-image: url(../images/home_success/icon-consultants.png);
+                }
+            }
+
+            &.active{
+                .icon{
+                    background-color: $color-lighter_gold;
+                    background-position: center right;
+                }
+            }
+        }
+    }
+
+    .value{
+        font-size: 170px;
+        line-height: 1.2em;
+        color: $color-gold;
+        font-family:"acumin-pro-condensed";
+        font-weight: 600;
+
+        @include media-breakpoint-down(md){
+            font-size: 108px;
+        }
+    }
+    .name{
+        font-size: 1.286rem;
+        color: $color-darker_grey;
+        text-transform: uppercase;
+
+        @include media-breakpoint-down(sm){
+            font-size: 1rem;
+        }
+    }
+}
