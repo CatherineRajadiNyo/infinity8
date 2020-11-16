@@ -19,5 +19,7 @@
     "liveSassCompile.settings.autoprefix": [
         "> 1%",
         "last 2 versions"
-    ]
+    ],
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.multiRootWorkspaceName": "html"
 }

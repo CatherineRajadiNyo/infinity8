@@ -141,6 +141,8 @@ textarea{
     color: $color-white;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 110px 0;
+    background-position: center left;
     
     &-home{
         height: 768px;
@@ -151,15 +153,18 @@ textarea{
     &-contact_us{
         min-height: 548px;
         background-image: url('../images/banner/bg-footer.jpg');
-        background-position: center left;
-        padding: 110px 0;
     }
     
     &-home_success{
         min-height: 823px;
         background-image: url('../images/banner/bg-home_success.jpg');
-        background-position: center left;
-        padding: 110px 0;
+    }
+    
+    &-infinity_grey{
+        min-height: 840px;
+        background: $color-lighter_grey url('../images/banner/bg-infinity-grey.jpg') no-repeat;
+        background-position: bottom left;
+        background-size: 1366px 1080px;
     }
 
     &-content{
@@ -208,7 +213,7 @@ textarea{
     .subtitle{
         width: 40%;
         margin: 0 auto;
-        
+
         @include media-breakpoint-down(md){
             width: 100%;
         }
@@ -292,6 +297,90 @@ textarea{
 
         @include media-breakpoint-down(sm){
             font-size: 1rem;
+        }
+    }
+}
+
+.home_process{
+    .title{
+        font-size: 1.571rem;
+        font-weight: bold;
+        fill: $color-gold;
+        line-height: 1em;
+    }
+
+    .pie-tab{
+        cursor: pointer;
+        *{
+            transition: all .5s;
+        }
+        .bg_pie{
+            fill: $color-light_grey;
+            stroke: #e9e9e9;
+            &_border{
+                fill: #e9e9e9;
+            }
+        }
+        .header{
+            font-size: 32px;
+            fill: $color-grey;
+        }
+        .content{
+            tspan{
+                font-size: 1rem;
+                font-weight: 600;
+                fill: $color-grey;
+            }
+        }
+        &.active,
+        &.hover{
+            .bg_pie{
+                fill: $color-dark_blue;
+                stroke: #000000;
+                &_border{
+                    fill: #000000;
+                }
+            }
+            .header{
+                fill: $color-white;
+            }
+            .content{
+                tspan{
+                    fill: $color-white;
+                }
+            }
+        }
+    }
+
+    .tab-content{
+        margin-top: 130px;
+
+        @include media-breakpoint-down(md){
+            margin-top: 0;
+        }
+    }
+
+    &_content{
+        color: $color-darker_grey;
+
+        .header{
+            color: $color-gold;
+            font-size: 3.571rem;
+            font-weight: 200;
+        }
+
+        .subheader{
+            color: $color-gold;
+            font-size: 1.571rem;
+            font-weight: 600;
+        }
+
+        hr{
+            margin: 26px 0;
+        }
+
+        button{
+            margin-top: 40px;
         }
     }
 }

@@ -13,6 +13,7 @@
 
 <body>
     <?php include 'header.php' ?>
+
     <section class="banner banner-home">
         <div class="container h-100">
             <div class="row h-100">
@@ -25,6 +26,7 @@
             </div>
         </div>
     </section>
+
     <section class="banner banner-home_success home_success">
         <div class="container">
             <div class="row">
@@ -107,11 +109,106 @@
                     </nav>
                 </div>
             </div>
+            <div class="row">
+                <div class="col text-center">
+                    <a href="#" class="btn btn-primary mt-5">find out more</a>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section class="banner banner-infinity_grey home_process">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-7 text-center">
+                    <h3 class="color-dark_blue mb-5">OUR PROCESS</h3>
+                    <svg id="donut-chart"></svg>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active home_process_content" data-process="01">
+                            <div class="header">01.</div>
+                            <div class="subheader">Determining your current financial situation</div>
+                            <hr />
+                            <div>
+                                The financial planner should clearly explain or document the services to be provided to
+                                you and define both his and your responsibilities. The planner should explain fully how
+                                he will be paid and by whom. You and the planner should agree on how long the
+                                professional relationship should last and on how decisions will be made.
+                            </div>
+                            <button type="button" class="btn btn-secondary">Book appointment</button>
+                        </div>
+                        <div class="tab-pane fade home_process_content" data-process="02">
+                            <div class="header">02.</div>
+                            <div class="subheader">Developing financial goals</div>
+                            <hr />
+                            <div>
+                                The financial planner should clearly explain or document the services to be provided to
+                                you and define both his and your responsibilities. The planner should explain fully how
+                                he will be paid and by whom. You and the planner should agree on how long the
+                                professional relationship should last and on how decisions will be made.
+                            </div>
+                            <button type="button" class="btn btn-secondary">Book appointment</button>
+                        </div>
+                        <div class="tab-pane fade home_process_content" data-process="03">
+                            <div class="header">03.</div>
+                            <div class="subheader">Identifying alternative courses of action</div>
+                            <hr />
+                            <div>
+                                The financial planner should clearly explain or document the services to be provided to
+                                you and define both his and your responsibilities. The planner should explain fully how
+                                he will be paid and by whom. You and the planner should agree on how long the
+                                professional relationship should last and on how decisions will be made.
+                            </div>
+                            <button type="button" class="btn btn-secondary">Book appointment</button>
+                        </div>
+                        <div class="tab-pane fade home_process_content" data-process="04">
+                            <div class="header">04.</div>
+                            <div class="subheader">Evaluating alternatives</div>
+                            <hr />
+                            <div>
+                                The financial planner should clearly explain or document the services to be provided to
+                                you and define both his and your responsibilities. The planner should explain fully how
+                                he will be paid and by whom. You and the planner should agree on how long the
+                                professional relationship should last and on how decisions will be made.
+                            </div>
+                            <button type="button" class="btn btn-secondary">Book appointment</button>
+                        </div>
+                        <div class="tab-pane fade home_process_content" data-process="05">
+                            <div class="header">05.</div>
+                            <div class="subheader">Creating and implementing a financial action plan</div>
+                            <hr />
+                            <div>
+                                The financial planner should clearly explain or document the services to be provided to
+                                you and define both his and your responsibilities. The planner should explain fully how
+                                he will be paid and by whom. You and the planner should agree on how long the
+                                professional relationship should last and on how decisions will be made.
+                            </div>
+                            <button type="button" class="btn btn-secondary">Book appointment</button>
+                        </div>
+                        <div class="tab-pane fade home_process_content" data-process="06">
+                            <div class="header">06.</div>
+                            <div class="subheader">Reevaluating and revising the plan</div>
+                            <hr />
+                            <div>
+                                The financial planner should clearly explain or document the services to be provided to
+                                you and define both his and your responsibilities. The planner should explain fully how
+                                he will be paid and by whom. You and the planner should agree on how long the
+                                professional relationship should last and on how decisions will be made.
+                            </div>
+                            <button type="button" class="btn btn-secondary">Book appointment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <?php include 'footer.php' ?>
     <script src="js/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
