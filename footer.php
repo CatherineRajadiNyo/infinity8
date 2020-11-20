@@ -44,10 +44,18 @@
         <div class="row">
             <div class="col d-flex">
                 <a href="#">about us</a>
-                <a href="#">the team</a>
+                <a href="team.php">the team</a>
                 <a href="#">learning centre</a>
             </div>
             <div class="col text-right">© Infinity 8 Singapore. All rights are reserved.</div>
         </div>
     </div>
 </section>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

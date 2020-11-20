@@ -7,6 +7,7 @@ $color-white: #FFFFFF;
 $color-lighter_grey: #F8F8F8;
 $color-light_grey: #F4F4F4;
 $color-grey: #C4C4C4;
+$color-greyish: #AFAFAF;
 $color-dark_grey: #909090;
 $color-darker_grey: #676767;
 $color-black: #000000;
@@ -32,6 +33,9 @@ $logo-width: 252px;
     }
     &-grey{
         color:$color-grey;
+    }
+    &-greyish{
+        color:$color-greyish;
     }
     &-dark_grey{
         color:$color-dark_grey;

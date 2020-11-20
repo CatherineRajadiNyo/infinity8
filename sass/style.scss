@@ -143,11 +143,16 @@ textarea{
     background-repeat: no-repeat;
     padding: 110px 0;
     background-position: center left;
+    height: 486px;
     
     &-home{
         height: 768px;
         background-image: url('../images/banner/bg-home.jpg');
         background-position: center right;
+    }
+
+    &-team{
+        background-image: url('../images/banner/bg-team.jpg');
     }
     
     &-contact_us{
@@ -209,178 +214,269 @@ textarea{
     }
 }
 
-.home_success{
-    .subtitle{
-        width: 40%;
-        margin: 0 auto;
+.home{
+    &_success{
+        .subtitle{
+            width: 40%;
+            margin: 0 auto;
 
-        @include media-breakpoint-down(md){
-            width: 100%;
+            @include media-breakpoint-down(md){
+                width: 100%;
+            }
         }
-    }
-    .tab-content{
-        padding: 40px 0;
-        border-bottom: 1px solid $color-grey;
-        transition: all .25s;
-    }
+        .tab-content{
+            padding: 40px 0;
+            border-bottom: 1px solid $color-grey;
+            transition: all .25s;
+        }
 
-    .tab-content > .tab-pane{
-        text-align: center;
-    }
-
-    .nav-tabs{
-        border-bottom: 0;
-        display: flex;
-        justify-content: space-evenly;
-
-        .nav-link{
-            background-color: transparent;
-            border: 0;
-            color: $color-dark_blue;
+        .tab-content > .tab-pane{
             text-align: center;
-            padding-top: 25px;
+        }
+
+        .nav-tabs{
+            border-bottom: 0;
+            display: flex;
+            justify-content: space-evenly;
+
+            .nav-link{
+                background-color: transparent;
+                border: 0;
+                color: $color-dark_blue;
+                text-align: center;
+                padding-top: 25px;
+
+                @include media-breakpoint-down(sm){
+                    margin: 0 1.5rem;
+                }
+
+                .icon{
+                    width: 76px;
+                    height: 76px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    background-repeat: no-repeat;
+                    background-position: center left;
+                    transition: all .25s;
+
+                    &-partners{
+                        background-image: url(../images/home_success/icon-partners.png);
+                    }
+                    &-clients{
+                        background-image: url(../images/home_success/icon-clients.png);
+                    }
+                    &-assets{
+                        background-image: url(../images/home_success/icon-assets.png);
+                    }
+                    &-claims{
+                        background-image: url(../images/home_success/icon-claims.png);
+                    }
+                    &-consultants{
+                        background-image: url(../images/home_success/icon-consultants.png);
+                    }
+                }
+
+                &.active{
+                    .icon{
+                        background-color: $color-lighter_gold;
+                        background-position: center right;
+                    }
+                }
+            }
+        }
+
+        .value{
+            font-size: 170px;
+            line-height: 1.2em;
+            color: $color-gold;
+            font-family:"acumin-pro-condensed";
+            font-weight: 600;
+
+            @include media-breakpoint-down(md){
+                font-size: 108px;
+            }
+        }
+        .name{
+            font-size: 1.286rem;
+            color: $color-darker_grey;
+            text-transform: uppercase;
 
             @include media-breakpoint-down(sm){
-                margin: 0 1.5rem;
-            }
-
-            .icon{
-                width: 76px;
-                height: 76px;
-                border-radius: 50%;
-                overflow: hidden;
-                background-repeat: no-repeat;
-                background-position: center left;
-                transition: all .25s;
-
-                &-partners{
-                    background-image: url(../images/home_success/icon-partners.png);
-                }
-                &-clients{
-                    background-image: url(../images/home_success/icon-clients.png);
-                }
-                &-assets{
-                    background-image: url(../images/home_success/icon-assets.png);
-                }
-                &-claims{
-                    background-image: url(../images/home_success/icon-claims.png);
-                }
-                &-consultants{
-                    background-image: url(../images/home_success/icon-consultants.png);
-                }
-            }
-
-            &.active{
-                .icon{
-                    background-color: $color-lighter_gold;
-                    background-position: center right;
-                }
+                font-size: 1rem;
             }
         }
     }
-
-    .value{
-        font-size: 170px;
-        line-height: 1.2em;
-        color: $color-gold;
-        font-family:"acumin-pro-condensed";
-        font-weight: 600;
-
-        @include media-breakpoint-down(md){
-            font-size: 108px;
+    &_process{
+        .title{
+            font-size: 1.571rem;
+            font-weight: bold;
+            fill: $color-gold;
+            line-height: 1em;
         }
-    }
-    .name{
-        font-size: 1.286rem;
-        color: $color-darker_grey;
-        text-transform: uppercase;
-
-        @include media-breakpoint-down(sm){
-            font-size: 1rem;
+    
+        .pie-tab{
+            cursor: pointer;
+            *{
+                transition: all .5s;
+            }
+            .bg_pie{
+                fill: $color-light_grey;
+                stroke: #e9e9e9;
+                &_border{
+                    fill: #e9e9e9;
+                }
+            }
+            .header{
+                font-size: 32px;
+                fill: $color-grey;
+            }
+            .content{
+                tspan{
+                    font-size: 1rem;
+                    font-weight: 600;
+                    fill: $color-grey;
+                }
+            }
+            &.active,
+            &.hover{
+                .bg_pie{
+                    fill: $color-dark_blue;
+                    stroke: #000000;
+                    &_border{
+                        fill: #000000;
+                    }
+                }
+                .header{
+                    fill: $color-white;
+                }
+                .content{
+                    tspan{
+                        fill: $color-white;
+                    }
+                }
+            }
+        }
+    
+        .tab-content{
+            margin-top: 130px;
+    
+            @include media-breakpoint-down(md){
+                margin-top: 0;
+            }
+        }
+    
+        &_content{
+            color: $color-darker_grey;
+    
+            .header{
+                color: $color-gold;
+                font-size: 3.571rem;
+                font-weight: 200;
+            }
+    
+            .subheader{
+                color: $color-gold;
+                font-size: 1.571rem;
+                font-weight: 600;
+            }
+    
+            hr{
+                margin: 26px 0;
+            }
+    
+            button{
+                margin-top: 40px;
+            }
         }
     }
 }
 
-.home_process{
-    .title{
-        font-size: 1.571rem;
-        font-weight: bold;
-        fill: $color-gold;
-        line-height: 1em;
+.team{
+    margin: 16px 0;
+
+    .manager{
+        margin: 46px 0;
     }
 
-    .pie-tab{
-        cursor: pointer;
-        *{
+    .item{
+        display: block;
+        height: 490px;
+        position: relative;
+        margin: 36px 0;
+        overflow: hidden;
+        
+        .background{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: url('/images/portrait-bg.jpg') center no-repeat;
+            background-size: cover;
+            z-index: 1;
+            filter: blur(0px);
+            -webkit-filter: blur(0px);
             transition: all .5s;
-        }
-        .bg_pie{
-            fill: $color-light_grey;
-            stroke: #e9e9e9;
-            &_border{
-                fill: #e9e9e9;
+
+            &:after{
+                transition: all .5s;
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(17, 45, 78, .5);
+                opacity: 0;
             }
         }
-        .header{
-            font-size: 32px;
-            fill: $color-grey;
-        }
-        .content{
-            tspan{
-                font-size: 1rem;
+
+        &__details{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            color: $color-white;
+            padding: 30px;
+            transition: all .5s;
+
+            &__name{
+                text-transform: uppercase;
+                color: $color-gold;
+                font-size: 1.857rem;
                 font-weight: 600;
-                fill: $color-grey;
+            }
+            &__position{
+                text-transform: uppercase;
+                font-size: 1.286rem;
+                font-weight: 600;
+            }
+            &__description{
+                margin-top: 0;
+                width: 70%;
+                height: 0;
+                overflow: hidden;
             }
         }
-        &.active,
-        &.hover{
-            .bg_pie{
-                fill: $color-dark_blue;
-                stroke: #000000;
-                &_border{
-                    fill: #000000;
+
+        &:hover{
+            .background{
+                filter: blur(1px);
+                -webkit-filter: blur(1px);
+
+                &:after{
+                    top: 0;
+                    opacity: 1;
                 }
             }
-            .header{
-                fill: $color-white;
-            }
-            .content{
-                tspan{
-                    fill: $color-white;
+            .item__details{
+                bottom: 50%;
+                transform: translateY(50%);
+                &__description{
+                    margin-top: 1.5rem;
+                    height: auto;
                 }
             }
-        }
-    }
-
-    .tab-content{
-        margin-top: 130px;
-
-        @include media-breakpoint-down(md){
-            margin-top: 0;
-        }
-    }
-
-    &_content{
-        color: $color-darker_grey;
-
-        .header{
-            color: $color-gold;
-            font-size: 3.571rem;
-            font-weight: 200;
-        }
-
-        .subheader{
-            color: $color-gold;
-            font-size: 1.571rem;
-            font-weight: 600;
-        }
-
-        hr{
-            margin: 26px 0;
-        }
-
-        button{
-            margin-top: 40px;
         }
     }
 }
