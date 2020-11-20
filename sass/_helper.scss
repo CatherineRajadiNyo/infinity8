@@ -80,16 +80,25 @@ $logo-width: 252px;
 }
 
 .fs{
+    &-larger{
+        font-size: 1.571rem; //22px
+    }
     &-large{
-        font-size: 1.286rem;
+        font-size: 1.286rem; //18px
     }
     &-small{
-        font-size: 0.857rem;
+        font-size: 0.857rem; //12px
     }
 }
 
 .fw{
     &-bold{
         font-weight: 600;
+    }
+}
+
+.text{
+    &-underline{
+        text-decoration: underline;
     }
 }

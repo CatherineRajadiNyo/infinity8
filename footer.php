@@ -1,10 +1,25 @@
-<section class="banner banner-contact_us contact-us">
+<?php
+$bg = "-blue";
+$logo = "/images/logo@2x.png";
+$header = "color-gold";
+$btn = "btn-secondary";
+$who = "us";
+if(strpos($_SERVER['REQUEST_URI'], 'consultant')){
+    $bg = "-gold";
+    $logo = "/images/logo-white.png";
+    $header = "color-dark_blue";
+    $btn = "btn-primary";
+    $who = "chua zhi qun";
+}
+?>
+<section class="banner banner-contact_us contact-us <?php echo $bg; ?>">
     <div class="container h-100">
         <div class="row h-100">
             <div class="col-12 col-md-4 contact-us-content">
-                <img src="/images/logo@2x.png" alt="logo" class="logo mb-5" />
+                <img src="<?php echo $logo; ?>" alt="logo" class="logo mb-5" />
                 <div class="mb-5">60 Anson Road, Wework<br />#17-01, 059441 singapore</div>
-                <div class="mb-5"><a href="mailto:sayhello@infinity8.com">sayhello@infinity8.com</a></div>
+                <div class="mb-5"><a href="mailto:sayhello@infinity8.com"
+                        class="text-underline">sayhello@infinity8.com</a></div>
                 <div class="mb-5">
                     <a href="tel:+6589972891">+65 8997 2891</a>
                     <br />
@@ -18,7 +33,7 @@
             </div>
             <div class="col-12 col-md-8 contact-us-form">
                 <div class="header mb-5">
-                    <h4 class="color-gold">CONTACT US TODAY</h4>
+                    <h4 class="<?php echo $header; ?>">CONTACT <?php echo $who; ?> TODAY</h4>
                 </div>
                 <form>
                     <div class="mb-3 d-flex justify-content-between">
@@ -32,7 +47,7 @@
                         <textarea name="message" placeholder="Message"></textarea>
                     </div>
                     <div class="pt-3">
-                        <button type="submit" class="btn btn-secondary">Book appointment</button>
+                        <button type="submit" class="btn <?php echo $btn; ?>">Book appointment</button>
                     </div>
                 </form>
             </div>
