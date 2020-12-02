@@ -90,6 +90,8 @@ textarea{
         padding-right: 1rem;
         font-size: inherit;
         font-size: 0.857rem;
+        display: block;
+        text-align: center;
     }
 }
 
@@ -102,16 +104,61 @@ textarea{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
+    transition: all .5s linear;
+    overflow: hidden;
+
+    &.scroll{
+        background-color: $color-dark_blue;
+        @include media-breakpoint-down("md"){
+            height: auto;
+        }
+    }
+
+    &-toggler{
+        border: 0;
+
+        &:focus{
+            outline: none;
+        }
+    }
 
     &-brand{
         width: $logo-width;
         padding: 0;
+
+        @include media-breakpoint-down("md"){
+            margin: 0 auto;
+            text-align: center;
+            padding-right: 42px;
+            padding-left: 48px;
+            width: 300px;
+        }
+
+        @include media-breakpoint-down("xs"){
+            width: 192px;
+            padding-left: 20px;
+        }
+    }
+
+    &-collapse{
+        height: 0;
+        transition: all .5s linear;
+        
+        &.show{
+            height: 100%;
+            display: flex;
+        }
     }
 
     &-nav{
         flex-grow: 1;
         justify-content: flex-end;
         align-items: center;
+
+        @include media-breakpoint-down("md"){
+            padding: 16px 0;
+        }
         
         .nav-link{
             color: $color-white !important;
@@ -134,8 +181,16 @@ textarea{
         }
 
         .nav-item{
+            @include media-breakpoint-down("md"){
+                padding: 8px 0;
+            }
+
             &:last-child{
                 margin-left: 16px;
+
+                @include media-breakpoint-down("md"){
+                    margin-left: 0;
+                }
             }
         }
     }
@@ -198,11 +253,13 @@ textarea{
     
     &-home_success{
         min-height: 823px;
+        height: fit-content;
         background-image: url('../images/banner/bg-home_success.jpg');
     }
     
     &-infinity_grey{
         min-height: 840px;
+        height: fit-content;
         background: $color-lighter_grey url('../images/banner/bg-infinity-grey.jpg') no-repeat;
         background-position: bottom left;
         background-size: 1366px 1080px;
@@ -360,6 +417,20 @@ textarea{
             font-weight: bold;
             fill: $color-gold;
             line-height: 1em;
+        }
+
+        &__container{
+            position: relative;
+            min-height: 450px;
+        }
+
+        #donut-chart{
+            @include media-breakpoint-down(sm){
+                transform: translateX(-50%) scale(.8);
+                position: absolute;
+                top: 0;
+                left: 50%;
+            }
         }
     
         .pie-tab{

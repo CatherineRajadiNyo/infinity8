@@ -16,6 +16,9 @@ $border-radius-button: 25px;
 $logo-width: 252px;
 
 .color{
+    &-white{
+        color: $color-white;
+    }
     &-blue{
         color:$color-blue;
     }

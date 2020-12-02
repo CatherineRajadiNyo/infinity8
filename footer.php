@@ -56,13 +56,13 @@ if(strpos($_SERVER['REQUEST_URI'], 'consultant')){
 </section>
 <section class="bg-blue">
     <div class="container footer">
-        <div class="row">
-            <div class="col d-flex">
+        <div class="row no-gutters">
+            <div class="col-12 col-sm d-sm-flex">
                 <a href="#">about us</a>
                 <a href="team.php">the team</a>
                 <a href="#">learning centre</a>
             </div>
-            <div class="col text-right">© Infinity 8 Singapore. All rights are reserved.</div>
+            <div class="col-12 col-sm text-center text-sm-right">© Infinity 8 Singapore. All rights are reserved.</div>
         </div>
     </div>
 </section>
@@ -71,6 +71,6 @@ if(strpos($_SERVER['REQUEST_URI'], 'consultant')){
 <script src="https://d3js.org/d3.v4.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/donut.js"></script>
 </body>
-
 </html>

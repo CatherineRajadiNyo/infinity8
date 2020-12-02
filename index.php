@@ -5,7 +5,7 @@
         <div class="row h-100">
             <div class="col-12 col-md-7 banner-content">
                 <h2>A fresh and ORIGINAL approach to financial services IN Singapore</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                <p class="color-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <div><button class="btn btn-primary">Find out more</button></div>
             </div>
@@ -106,7 +106,9 @@
         <div class="row">
             <div class="col-12 col-lg-7 text-center">
                 <h3 class="color-dark_blue mb-5">OUR PROCESS</h3>
-                <svg id="donut-chart"></svg>
+                <div class="home_process__container">
+                    <svg id="donut-chart"></svg>
+                </div>
             </div>
             <div class="col-12 col-lg-5">
                 <div class="tab-content">
