@@ -33,4 +33,11 @@ $(function () {
             $(".navbar").removeClass("scroll")
         }
     });
+
+    $(".js-book_appointment").on("click", function () {
+        $('html, body').animate({
+            scrollTop: $(".banner-contact_us").offset().top
+        }, 500);
+
+    })
 })

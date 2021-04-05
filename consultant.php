@@ -46,7 +46,7 @@
                     </p>
                 </div>
                 <div class="consultant__bio__qualification">
-                    <h3 class="header">My Qualifications & Accreditations</h3>
+                    <h3 class="header text-center">My Qualifications & Accreditations</h3>
                     <div class="credit__container">
                         <div class="credit">Certified Financial Planning (CFP®), since 2014</div>
                         <div class="credit">Chartered Financial Consultant (ChFC®), since 2015</div>
@@ -73,30 +73,36 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-4">
-                <div class="consultant__specialization__item">
-                    <img src="images/specialization/Investment Planning.jpg" />
-                    <div class="consultant__specialization__item-content">
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <div class="card__image">
+                        <img src="images/specialization/Investment Planning.jpg" />
+                    </div>
+                    <div class="card__content">
                         <h6 class="color-gold mb-3">Investment Planning</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="consultant__specialization__item">
-                    <img src="images/specialization/Investment Planning.jpg" />
-                    <div class="consultant__specialization__item-content">
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <div class="card__image">
+                        <img src="images/specialization/Investment Planning.jpg" />
+                    </div>
+                    <div class="card__content">
                         <h6 class="color-gold mb-3">Investment Planning</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="consultant__specialization__item">
-                    <img src="images/specialization/Investment Planning.jpg" />
-                    <div class="consultant__specialization__item-content">
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <div class="card__image">
+                        <img src="images/specialization/Investment Planning.jpg" />
+                    </div>
+                    <div class="card__content">
                         <h6 class="color-gold mb-3">Investment Planning</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         </p>
@@ -138,7 +144,8 @@
             <div class="col-12">
                 <h3 class="header color-gold mb-4">BE INSPIRED BY REAL STORIES</h3>
             </div>
-            <div class="col-12">
+            <div class="col-12 -relative">
+                <div class="quote"><img src="images/icon-quote.png" /></div>
                 <div class="consultant__testimonial__item">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -163,9 +170,31 @@
                         <li class="arrow"><button>&gt;</button></li>
                     </ul>
                 </div>
+
+                <button type="button" class="btn btn-secondary consultant__testimonial__button" data-toggle="modal"
+                    data-target="#reviewModal">
+                    write a review
+                </button>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-header">
+                <h5 class="modal-title" id="reviewModalLabel">write a review</h5>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php include 'footer.php' ?>

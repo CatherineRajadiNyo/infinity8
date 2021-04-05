@@ -12,7 +12,7 @@ if(strpos($_SERVER['REQUEST_URI'], 'consultant')){
     $who = "chua zhi qun";
 }
 ?>
-<section class="banner banner-contact_us contact-us <?php echo $bg; ?>">
+<section id="contact_us" class="banner banner-contact_us contact-us <?php echo $bg; ?>">
     <div class="container h-100">
         <div class="row h-100">
             <div class="col-12 col-md-4 contact-us-content">
@@ -73,4 +73,5 @@ if(strpos($_SERVER['REQUEST_URI'], 'consultant')){
 <script src="js/script.js"></script>
 <script src="js/donut.js"></script>
 </body>
+
 </html>

@@ -5,10 +5,10 @@
 <section class="team">
     <div class="container">
         <div class="row manager">
-            <div class="col-8">
+            <div class="col-xs-12 col-md-6 col-lg-8">
                 <video></video>
             </div>
-            <div class="col-4 d-flex flex-column justify-content-center">
+            <div class="col-xs-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center">
                 <h3 class="color-blue">OUR ADVISORY TEAM</h3>
                 <div class="color-grey fs-large fw-bold mt-3 mb-5">A FAMILY OF PEOPLE DRIVEN BY PASSION</div>
                 <p class="color-darker_grey subtitle">

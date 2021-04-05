@@ -20,7 +20,8 @@
 
     &-primary,
     &-secondary{
-        background-color: transparent;
+        background-color: transparent !important;
+        color: $color-white !important;
         border: 0;
 
         &:hover,
@@ -28,7 +29,7 @@
         &:focus,
         &:not(:disabled):not(.disabled).active,
         &:not(:disabled):not(.disabled):active{
-            background-color: transparent;
+            background-color: transparent !important;
         }
 
         &:after {
@@ -54,7 +55,7 @@
         }
 
         &:hover {
-            color: $color-white;
+            color: $color-white !important;
             &:before {
                 width: 100%;
             }
@@ -63,34 +64,34 @@
     
     &-primary{
         &:after {
-            background-color: $color-dark_blue;
+            background-color: $color-dark_blue !important;
         }
         &:before {
-            background-color: $color-blue;
+            background-color: $color-blue !important;
         }
     }
 
     &-secondary{
         &:after {
-            background-color: $color-gold;
+            background-color: $color-gold !important;
         }
         &:before {
-            background-color: $color-lighter_gold;
+            background-color: $color-lighter_gold !important;
         }
     }
     
     &-outline-secondary{
-        color: $color-gold;
-        border-color: $color-gold;
+        color: $color-gold !important;
+        border-color: $color-gold !important;
 
         &:hover,
         &.focus,
         &:focus,
         &:not(:disabled):not(.disabled).active,
         &:not(:disabled):not(.disabled):active{
-            color: $color-white;
-            background-color: transparent;
-            border-color: $color-gold;
+            color: $color-white !important;
+            background-color: transparent !important;
+            border-color: $color-gold !important;
         }
 
         &:after {
@@ -110,13 +111,13 @@
             left: 0;
             width: 0%;
             height: 100%;
-            background-color: $color-gold;
+            background-color: $color-gold !important;
             transition: all .3s;
             border-radius: $border-radius-button;
             z-index: -1;
         }
         &:hover {
-            color: $color-white;
+            color: $color-white !important;
             &:before {
                 width: 100%;
             }

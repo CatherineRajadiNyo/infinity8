@@ -155,11 +155,11 @@ $(function () {
     //     .attr("width", 30)
 
     // Append text to the inner circle
-    svg.append("text")
-        .style("text-anchor", "middle")
-        .attr("class", "inner-circle title")
-        .attr("dy", ".5em")
-        .text(function (d) { return 'CLIENT'; });
+    // svg.append("text")
+    //     .style("text-anchor", "middle")
+    //     .attr("class", "inner-circle title")
+    //     .attr("dy", ".5em")
+    //     .text(function (d) { return 'CLIENT'; });
 
     // Wrap function to handle labels with longer text
     function wrap(text, width) {

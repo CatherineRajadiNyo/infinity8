@@ -2,6 +2,7 @@
 $color-blue: #112d4e;
 $color-dark_blue: #0D223A;
 $color-gold: #CBB376;
+$color-bright_gold: #D2AB67;
 $color-lighter_gold: #e0c786;
 $color-white: #FFFFFF;
 $color-lighter_grey: #F8F8F8;
@@ -15,93 +16,129 @@ $color-black: #000000;
 $border-radius-button: 25px;
 $logo-width: 252px;
 
-.color{
-    &-white{
+.color {
+    &-white {
         color: $color-white;
     }
-    &-blue{
-        color:$color-blue;
+
+    &-blue {
+        color: $color-blue;
     }
-    &-dark_blue{
-        color:$color-dark_blue;
+
+    &-dark_blue {
+        color: $color-dark_blue;
     }
-    &-gold{
-        color:$color-gold;
+
+    &-gold {
+        color: $color-gold;
     }
-    &-lighter_grey{
-        color:$color-lighter_grey;
+
+    &-bright_gold {
+        color: $color-bright_gold;
     }
-    &-light_grey{
-        color:$color-light_grey;
+
+    &-lighter_grey {
+        color: $color-lighter_grey;
     }
-    &-grey{
-        color:$color-grey;
+
+    &-light_grey {
+        color: $color-light_grey;
     }
-    &-greyish{
-        color:$color-greyish;
+
+    &-grey {
+        color: $color-grey;
     }
-    &-dark_grey{
-        color:$color-dark_grey;
+
+    &-greyish {
+        color: $color-greyish;
     }
-    &-darker_grey{
-        color:$color-darker_grey;
+
+    &-dark_grey {
+        color: $color-dark_grey;
     }
-    &-black{
-        color:$color-black;
+
+    &-darker_grey {
+        color: $color-darker_grey;
+    }
+
+    &-black {
+        color: $color-black;
     }
 }
 
 
-.bg{
-    &-blue{
-        background-color:$color-blue;
+.bg {
+    &-white {
+        background-color: $color-white;
     }
-    &-dark_blue{
-        background-color:$color-dark_blue;
+
+    &-blue {
+        background-color: $color-blue;
     }
-    &-gold{
-        background-color:$color-gold;
+
+    &-dark_blue {
+        background-color: $color-dark_blue;
     }
-    &-lighter_grey{
-        background-color:$color-lighter_grey;
+
+    &-gold {
+        background-color: $color-gold;
     }
-    &-light_grey{
-        background-color:$color-light_grey;
+
+    &-lighter_grey {
+        background-color: $color-lighter_grey;
     }
-    &-grey{
-        background-color:$color-grey;
+
+    &-light_grey {
+        background-color: $color-light_grey;
     }
-    &-dark_grey{
-        background-color:$color-dark_grey;
+
+    &-grey {
+        background-color: $color-grey;
     }
-    &-darker_grey{
-        background-color:$color-darker_grey;
+
+    &-dark_grey {
+        background-color: $color-dark_grey;
     }
-    &-black{
-        background-color:$color-black;
+
+    &-darker_grey {
+        background-color: $color-darker_grey;
+    }
+
+    &-black {
+        background-color: $color-black;
     }
 }
 
-.fs{
-    &-larger{
+.fs {
+    &-larger {
         font-size: 1.571rem; //22px
     }
-    &-large{
+
+    &-large {
         font-size: 1.286rem; //18px
     }
-    &-small{
+
+    &-small {
         font-size: 0.857rem; //12px
     }
 }
 
-.fw{
-    &-bold{
+.fw {
+    &-semi_bold {
+        font-weight: 500;
+    }
+
+    &-bold {
         font-weight: 600;
     }
 }
 
-.text{
-    &-underline{
+.text {
+    &-underline {
         text-decoration: underline;
+    }
+
+    &-uppercase {
+        text-transform: uppercase;
     }
 }

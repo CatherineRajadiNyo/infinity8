@@ -16,8 +16,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -32,10 +33,11 @@
                         <a class="nav-link" href="team.php">The Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Learning Centre</a>
+                        <a class="nav-link" href="learning_centre.php">Learning Centre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-outline-secondary" href="#">Book Appointment</a>
+                        <a class="nav-link btn btn-outline-secondary js-book_appointment"
+                            href="javascript:void(0);">Book Appointment</a>
                     </li>
                 </ul>
             </div>
